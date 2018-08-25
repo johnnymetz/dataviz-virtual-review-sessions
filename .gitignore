@@ -1,0 +1,15 @@
+# Mac files
+.DS_Store
+
+# Jupyter Checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Byte-compiled / optimized / DLL files
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
