@@ -7,3 +7,4 @@
 | 10    | Raw SQL vs. SQLAlchemy, Python interview questions
 | 12    | Web development with Flask and Bootstrap
 | 15    | Interview questions in JavaScript and Python
+| 17    | Deploying your apps with Heroku and PyInstaller
