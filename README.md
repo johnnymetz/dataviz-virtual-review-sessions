@@ -9,3 +9,4 @@
 | 15    | Interview questions in JavaScript and Python
 | 17    | Deploying your apps with Heroku and PyInstaller
 | 19    | Regular expressions
+| 21    | Python interview questions
