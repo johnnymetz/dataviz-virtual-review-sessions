@@ -1,0 +1,31 @@
+service: sl-get-nba-leaders
+custom:
+  pythonRequirements:
+    dockerizePip: true
+
+plugins:
+  - serverless-python-requirements
+
+provider:
+  name: aws
+  runtime: python3.7
+  stage: prod  # default=dev
+  region: us-west-2
+  environment:
+    AWS_S3_BUCKET: "${env:AWS_S3_BUCKET}"
+    MLAB_URI: "${env:MLAB_URI}"
+  tags:
+    pythonReqs: ${self:custom.pythonRequirements.dockerizePip}
+    someHelpfulTag: dataviz
+
+functions:
+  runJob:
+    handler: lambda_function.lambda_handler
+    description: Grab NBA leaders data and write it to S3 and mLab
+    role: arn:aws:iam::320974581835:role/lambda_demo
+    timeout: 10
+    events:
+      - schedule:
+          name: 1-minute-event
+          description: Execute every 1 minute
+          rate: rate(1 minute)

@@ -10,3 +10,4 @@
 | 17    | Deploying your apps with Heroku and PyInstaller
 | 19    | Regular expressions
 | 21    | Python interview questions
+| 23    | Amazon Web Services

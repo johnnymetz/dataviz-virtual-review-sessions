@@ -13,3 +13,10 @@ __pycache__/
 
 # Virtual Environments
 venv/
+
+# Secrets
+env.yml
+
+# Node
+node_modules/
+.serverless
